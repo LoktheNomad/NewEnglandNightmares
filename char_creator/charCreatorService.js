@@ -11,7 +11,7 @@ app.service('CharCreatorService', [function(){
   this.charName = null;
   this.charConcept = null;
   this.charNature = null;
-  this.charGeneration = "13th";
+  this.charGeneration = "11th";
   this.charSire = null;
   this.loadedCharacter = false;
 
@@ -19,7 +19,7 @@ app.service('CharCreatorService', [function(){
     return this.charPlayer;
   }
 
-  this.generations = ["3rd", "4th", "5th", "6th", "7th",
+  this.generations = ["6th", "7th",
                       "8th", "9th", "10th", "11th", "12th",
                       "13th", "14th", "15th"];
 

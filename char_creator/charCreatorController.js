@@ -26,9 +26,9 @@ app.controller("CharCreatorController",
      CharCreatorService.charConcept = charConcept;
    }
 
-   this.setNature = setNature;
-   function setNature(charNature){
-     CharCreatorService.charNature = charNature;
+   this.setArchetype = setArchetype;
+   function setArchetype(charArchetype){
+     CharCreatorService.charArchetype = charArchetype;
    }
 
    this.customDemeanor = false;
@@ -74,9 +74,9 @@ app.controller("CharCreatorController",
      return CharCreatorService.charConcept;
    }
 
-   this.charNature = getCharNature();
-   function getCharNature(){
-     return CharCreatorService.charNature;
+   this.charArchetype = getCharArchetype();
+   function getCharArchetype(){
+     return CharCreatorService.charArchetype;
    }
 
    this.charSire = getCharSire();
@@ -109,20 +109,19 @@ app.controller("CharCreatorController",
    this.maxFreePts = 22;
    this.maxFlawBonus = 7;
 
-   this.natureDemeanorList = ["Architect", "Autocrat", "Bon Vivant",
-                              "Bravo", "Capitalist", "Caregiver",
-                              "Celebrant", "Chameleon", "Child",
-                              "Competitor", "Conformist", "Conniver",
-                              "Creep Show", "Curmudgeon", "Dabbler",
-                              "Deviant", "Director", "Enigma",
-                              "Eye of the Storm", "Fanatic", "Gallant",
-                              "Guru", "Idealist", "Judge",
-                              "Loner", "Martyr", "Masochist",
-                              "Monster", "Pedagogue", "Penitent",
-                              "Perfectionist", "Rebel", "Rogue",
-                              "Sadist", "Scientist", "Sociopath",
-                              "Soldier", "Survivor", "Thrill-Seeker",
-                              "Traditionalist", "Trickster", "Visionary"];
+   this.ArchetypeList = ["Architect", "Artist", "Bully",
+                              "Caregiver", "Child", "Competitor",
+                              "Con Artist", "Conformist", "Curious",
+                              "Curmudgeon", "Cultured", "Enigma",
+                              "Fanatic", "Fighter", "Freak",
+                              "Free Spirit", "Judge", "Know-It-All",
+                              "Introvert", "Leader", "Loner",
+                              "Loose Cannon", "Martyr", "Mediator",
+                              "Mercenary", "Monster", "Penitent",
+                              "Protector", "Rationalist", "Royalty",
+                              "Survivor", "Type-A Personality", "Teacher",
+                              "Traditionalist", "Troublemaker", "Toady",
+                              "Trickster", "Unflappable", "Untrustworthy"];
 
    var self = this;
    $scope.$on('loadCharacter', function(){
@@ -130,7 +129,7 @@ app.controller("CharCreatorController",
      self.charChronicle = CharCreatorService.charChronicle;
      self.charName = CharCreatorService.charName;
      self.charConcept = CharCreatorService.charConcept;
-     self.charNature = CharCreatorService.charNature;
+     self.charArchetype = CharCreatorService.charArchetype;
      self.charDemeanor = CharCreatorService.charDemeanor;
      self.charSire = CharCreatorService.charSire;
      self.charGeneration = CharCreatorService.charGeneration;
@@ -142,7 +141,7 @@ app.controller("CharCreatorController",
      self.charChronicle = null;
      self.charName = null;
      self.charConcept = null;
-     self.charNature = null;
+     self.charArchetype = null;
      self.charDemeanor = null;
      self.charSire = null;
      self.charGeneration = "13th";

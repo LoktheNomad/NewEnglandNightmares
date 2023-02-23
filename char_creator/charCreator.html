@@ -22,10 +22,10 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-3">
-          <label termindex term="Nature" for="charNature">Nature: </label>
-          <input id="charNature" ng-model="creatorCtrl.charNature" ng-blur="creatorCtrl.setNature(creatorCtrl.charNature)"/>
-          <select id="charNatSelect" ng-model="creatorCtrl.charNature" ng-options="charNat for charNat in creatorCtrl.natureDemeanorList"
-                  ng-blur="creatorCtrl.setNature(creatorCtrl.charNature)" style="width:20px; height:26px; position:absolute;"></select>
+          <label termindex term="Archetype" for="charArchetype">Archetype: </label>
+          <input id="charArchetype" ng-model="creatorCtrl.charArchetype" ng-blur="creatorCtrl.setArchetype(creatorCtrl.charArchetype)"/>
+          <select id="charArchSelect" ng-model="creatorCtrl.charArchetype" ng-options="charArch for charArch in creatorCtrl.ArchetypeList"
+                  ng-blur="creatorCtrl.setArchetype(creatorCtrl.charArchetype)" style="width:20px; height:26px; position:absolute;"></select>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
           <label termindex term="Sire" for="charSire" style="margin-right: 12px;">Sire: </label>

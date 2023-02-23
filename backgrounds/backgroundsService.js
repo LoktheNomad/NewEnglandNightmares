@@ -10,10 +10,10 @@ app.service("BackgroundsService", ['CharCreatorService',
    this.chooseBackground = chooseBackground;
    this.resetBackgrounds = resetBackgrounds;
 
-   this.backgroundList = ["", "Allies", "Alternate Identity", "Black Hand Memebership",
-                          "Contacts", "Domain", "Fame", "Generation",
-                          "Herd", "Influence", "Mentor", "Resources",
-                          "Retainers", "Rituals", "Status"];
+   this.backgroundList = ["", "Allies", "Alternate Identity",
+                          "Contacts", "Haven", "Fame", "Generation",
+                          "Herd", "Influence: Elite", "Influence: Underworld", "Resources",
+                          "Retainers", "Supernatural Ally"];
 
   function freeBackgroundPt(background, index){
     if(index == 0 && background.pointCount == 1){
