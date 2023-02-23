@@ -79,11 +79,6 @@ app.controller("CharCreatorController",
      return CharCreatorService.charNature;
    }
 
-   this.charDemeanor = getCharDemeanor();
-   function getCharDemeanor(){
-     return CharCreatorService.charDemeanor;
-   }
-
    this.charSire = getCharSire();
    function getCharSire(){
      return CharCreatorService.charSire;

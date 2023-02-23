@@ -5,13 +5,12 @@ app.service('CharCreatorService', [function(){
   this.freebiePts = 15;
   this.freebieMode = false;
   this.freebieSpent = 0;
-
+  
   this.charPlayer = null;
   this.charChronicle = null;
   this.charName = null;
   this.charConcept = null;
   this.charNature = null;
-  this.charDemeanor = null;
   this.charGeneration = "13th";
   this.charSire = null;
   this.loadedCharacter = false;
